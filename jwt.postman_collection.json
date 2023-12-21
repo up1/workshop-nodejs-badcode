@@ -25,6 +25,16 @@
 		{
 			"name": "Hello",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVXNlciAxIiwiaWQiOjEsImlhdCI6MTcwMzE0MzU3MSwiZXhwIjoxNzAzMTQzNzUxfQ.f1rpAjeyTGIYL1EBVofW2Ddh7rGNb6i73jXtBodPkpM",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
