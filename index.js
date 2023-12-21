@@ -52,7 +52,7 @@ app.post('/auth/login', (req, res) => {
 
   users[user].refresh = accessToken;
 
-  res.json({
+  return res.json({
     accessToken,
     refreshToken,
   });
@@ -71,6 +71,7 @@ const jwtValidate = async (req, res, next) => {
       });
     });
     next();
+    return true;
   } catch (error) {
     return res.sendStatus(403);
   }
