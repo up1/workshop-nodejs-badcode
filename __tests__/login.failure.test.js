@@ -10,7 +10,6 @@ test('Login failure :: User not found', async () => {
 })
 
 test('Failure to access without JWT token', async () => {
-    // Call GET /hello with accessToken
     const responseHello = await request(app).get('/hello')
     expect(responseHello.statusCode).toBe(401)
 })
