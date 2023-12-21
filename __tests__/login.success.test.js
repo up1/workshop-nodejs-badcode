@@ -18,5 +18,5 @@ test('Success with login and access to /hello', async () => {
     const responseHello = await request(app).get('/hello')
     .set('Authorization', 'Bearer ' + accessToken)
     expect(responseHello.statusCode).toBe(200)
-    expect(responseHello.body).toBe('message')
+    expect(responseHello.text).toBe('Hello World!')
 })
